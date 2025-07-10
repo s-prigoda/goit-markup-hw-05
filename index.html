@@ -63,12 +63,10 @@
           <h1 class="hero-banner-title">
             Effective Solutions for Your Business
           </h1>
-          <div class="modal-overlay">
-            <div class="modal">
-              <button type="button" class="hero-banner-button">
-                Order Service
-              </button>
-            </div>
+          <div class="modal">
+            <button type="button" class="hero-banner-button">
+              Order Service
+            </button>
           </div>
         </div>
       </section>
@@ -543,5 +541,77 @@
         </div>
       </div>
     </footer>
+
+    <div class="overlay">
+      <form class="pop-up">
+        <button class="pop-up-close-btn" type="button">X</button>
+        <p class="pop-up-title">
+          Leave your contacts and we will call you back
+        </p>
+        <fieldset class="pop-up-field">
+          <label
+            >Name
+            <svg class="" width="18" height="18">
+              <use href="./images/icons.svg#icon-person-contact"></use>
+            </svg>
+            <input
+              type="text"
+              name="name"
+              placeholder="your name"
+              class="pop-up-field-input"
+            />
+          </label>
+        </fieldset>
+
+        <fieldset class="pop-up-field">
+          <label
+            >Phone
+            <svg class="" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            <input
+              type="tel"
+              name="tel"
+              placeholder="your number"
+              class="pop-up-field-input"
+            />
+          </label>
+        </fieldset>
+
+        <fieldset class="pop-up-field">
+          <label
+            >Email
+            <svg class="" width="18" height="24">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+            <input
+              type="email"
+              name="email"
+              placeholder="your email"
+              class="pop-up-field-input"
+            />
+          </label>
+        </fieldset>
+
+        <fieldset class="pop-up-field">
+          <label
+            >Comment
+            <textarea placeholder="Text input"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset class="pop-up-field">
+          <input type="checkbox" name="provacy" />
+          <label class="pop-up-privacy" for="privacy"
+            >I accept the terms and conditions of the
+            <span class="pop-up-privacy blue-text">Privacy Policy</span>
+          </label>
+        </fieldset>
+
+        <button type="submit" class="pop-up-button hero-banner-button">
+          Send
+        </button>
+      </form>
+    </div>
   </body>
 </html>
