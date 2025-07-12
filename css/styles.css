@@ -618,11 +618,13 @@ address {
   border-radius: 4px;
   width: 408px;
   height: 584px;
-  background-color: #fcfcfc;
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  padding: 0 24px;
   position: relative;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background: #fcfcfc;
 }
 
 .pop-up-title {
@@ -636,12 +638,19 @@ address {
 }
 
 .pop-up-close-btn {
-  width: 5%;
-  align-self: flex-end;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background-color: #e7e9fc;
+  align-self: flex-end;
   position: absolute;
   top: 24px;
+  right: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pop-up-close-icon {
+  fill: #2e2f42;
 }
 
 .pop-up-field {
@@ -649,6 +658,13 @@ address {
   border: none;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.pop-up-field-icon {
+  position: absolute;
+  top: 28px;
+  left: 20px;
 }
 
 .pop-up-field label {
@@ -681,9 +697,31 @@ address {
   color: #4d5ae5;
 }
 
-.pop-up-field-input {
+.pop-up-field-input,
+.pop-up-field-textarea {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
   height: 40px;
+}
+
+.pop-up-field-textarea {
+  height: 120px;
+}
+
+.pop-up-field-input:hover {
+  border-color: #4d5ae5;
+  stroke: #4d5ae5;
+}
+
+..pop-up-field-input:focus-visible {
+  border-color: #4d5ae5;
+}
+
+.pop-up-field,
+.pop-up-field-icon:hover {
+}
+
+.pop-up-field-icon:focus {
+  fill: #4d5ae5;
 }
