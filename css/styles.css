@@ -349,6 +349,20 @@ address {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-form-input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  padding-left: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
 .footer-link {
   display: flex;
   width: 100%;
@@ -626,7 +640,6 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 72px;
   margin-bottom: 16px;
 }
 
@@ -729,6 +742,13 @@ address {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
 .form-textarea:focus {
   border-color: #4d5ae5;
 }
@@ -769,10 +789,7 @@ address {
   text-decoration: underline;
 }
 
-.check-input:checked .check-label {
-  /* background-image: url("../images/icons.svg#icon-click");
-    background-repeat: no-repeat;
-    background-position: center; */
+.check-input:checked + .check-label .check-form {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
