@@ -670,8 +670,8 @@ address {
 
 .pop-up-field-icon {
   position: absolute;
-  top: 28px;
-  left: 20px;
+  top: 23px;
+  left: 13px;
 }
 
 .pop-up-field label {
@@ -704,6 +704,10 @@ address {
   color: #4d5ae5;
 }
 
+.pop-up-field-input {
+  padding-left: 38px;
+}
+
 .pop-up-field-input,
 .pop-up-field-textarea {
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -714,21 +718,35 @@ address {
 
 .pop-up-field-textarea {
   height: 120px;
+  padding-left: 0px;
+  resize: none;
 }
 
-.pop-up-field-input:hover {
+.pop-up-field:hover .pop-up-field-icon,
+.pop-up-field:hover .pop-up-field-input,
+.pop-up-field:hover .pop-up-field-input::placeholder {
   border-color: #4d5ae5;
   stroke: #4d5ae5;
 }
 
-..pop-up-field-input:focus-visible {
+.pop-up-field-input:focus-visible,
+.pop-up-field:hover .pop-up-field-icon,
+.pop-up-field-input:focus-visible .pop-up-field-input::placeholder,
+.pop-up-field-comment:focus-visible {
   border-color: #4d5ae5;
-}
-
-.pop-up-field,
-.pop-up-field-icon:hover {
-}
-
-.pop-up-field-icon:focus {
+  stroke: #4d5ae5;
+  outline: none;
   fill: #4d5ae5;
+}
+
+.pop-up-field:focus-within .pop-up-field-icon,
+.pop-up-field:focus-within .pop-up-field-input::placeholder {
+  stroke: #4d5ae5;
+  color: #4d5ae5;
+}
+
+.pop-up-close-btn:hover,
+.pop-up-close-icon:hover {
+  background-color: #404bbf;
+  fill: #fff;
 }
