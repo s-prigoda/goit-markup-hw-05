@@ -183,11 +183,6 @@ address {
 
 /* hero section start */
 
-.modal-overlay {
-  background-color: red;
-  position: fixed;
-}
-
 .hero-banner {
   background-color: #2e2f42;
   background-size: cover;
@@ -618,7 +613,8 @@ address {
   justify-content: center;
   align-items: center;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .pop-up {
@@ -638,7 +634,7 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .pop-up-title {
+.pop-up-title {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -646,7 +642,7 @@ address {
   color: #2e2f42;
   margin-top: 72px;
   margin-bottom: 16px;
-} */
+}
 
 .pop-up-close-btn {
   width: 24px;
@@ -664,6 +660,27 @@ address {
   padding: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pop-up-close-btn:hover,
+.pop-up-close-icon:hover {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+
+.pop-up-close-btn:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+
+.pop-up-close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pop-up-form {
+  margin-bottom: 8px;
 }
 
 .form-label {
@@ -762,18 +779,12 @@ address {
   text-decoration: underline;
 }
 
-/* .pop-up-close-icon {
-  fill: #2e2f42;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.visually-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
-.pop-up-field {
-  margin-bottom: 8px;
-  /* border: none;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 0; */
 
 /* 
 .pop-up-field-icon {
@@ -845,15 +856,4 @@ address {
   color: #4d5ae5;
 }
 
-.pop-up-close-btn:hover,
-.pop-up-close-icon:hover {
-  background-color: #404bbf;
-  border: none;
-  fill: #ffffff;
-}
 
-.pop-up-close-btn:focus {
-  background-color: #404bbf;
-  border: none;
-  fill: #ffffff;
-} */
