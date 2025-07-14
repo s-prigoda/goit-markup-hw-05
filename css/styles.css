@@ -757,6 +757,10 @@ address {
   margin-bottom: 24px;
 }
 
+.pop-up-button {
+  margin-top: 0;
+}
+
 .check-label {
   font-size: 12px;
   line-height: 1.17;
